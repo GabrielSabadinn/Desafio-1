@@ -1,0 +1,92 @@
+:root {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #213547;
+  background-color: #ffffff;
+}
+
+a {
+  font-weight: 500;
+  color: #28a745;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #218838;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.5em; 
+  line-height: 1.5;
+  margin-bottom: 2rem; 
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.8em 1.6em;
+  font-size: 1.1em; 
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #28a745;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  margin-top: 1rem; 
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.form-select {
+  font-size: 1.1em; /* Aumentando o tamanho da fonte dos selects */
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  border: 1px solid #ced4da; /* Adicionando uma borda aos selects */
+  transition: border-color 0.25s;
+  margin-bottom: 1rem; /* Adicionando espaçamento abaixo dos selects */
+}
+
+.form-select:focus {
+  border-color: #28a745; /* Alterando a cor da borda ao focar */
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+    color: #213547;
+  }
+}
